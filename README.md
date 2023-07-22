@@ -1,2 +1,2 @@
-# webpack5-loader-plugin
+# webpack-loader-plugin
 The theory of loader and plugin
