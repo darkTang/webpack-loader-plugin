@@ -7,7 +7,7 @@ webpack只能识别js和json文模块，对于其他其他文件需要loader将�
 - synchronous loader
 - asynchronous loader
 - raw loader
-- pitching loader
+- pitch loader
 
 ## 
 
