@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const TestPlugin = require("./plugins/test-plugin");
 
 module.exports = {
   entry: "./src/main.js",
@@ -53,6 +54,7 @@ module.exports = {
       filename: "index.html",
       inject: "body",
     }),
+    new TestPlugin()
   ],
   mode: "development",
 };
