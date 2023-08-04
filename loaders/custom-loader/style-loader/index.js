@@ -1,4 +1,10 @@
 module.exports = function (content) {
+  /*
+    1. 直接使用style-loadera，只能处理样式，不能处理样式中引入的其他资源
+    2. 借助css-laoder，解决样式中引入的其他资源问题
+    3. 问题是css-loader暴露了一段js代码，style-loader需要执行js代码，得到返回值，再动态创建style标签，插入到页面上，不好操作
+  */
+
   // const script = `
   //   const styleEl = document.createElement('style');
   //   styleEl.innerHTML = ${JSON.stringify(content)};
